@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tile Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html">My Tyles</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="assets/image1.jpg" alt="">
+                  </div>
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="Bedroom.html">Bedroom Tiles</a></li>
+                      <li><a href="wall.html">Wall Tiles</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="floor.html">Floor Tiles</a></li>
+                      <li><a href="Bathroom.html">Bathroom Tiles</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="Kitchen.html">Kitchen Tiles</a></li>
+                      <li><a href="outdoor.html">Outdoor Tiles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav> -->
+
+    <div class="container">
+        <header>
+            <h1>Tile Calculator</h1>
+            <p>Fill in the details below to get the exact calculation of tile needs.</p>
+        </header>
+
+        
+        <div class="room-type">
+            <h2>Room Type</h2>
+            <div class="room-options">
+                <a href="#" class="room-option active">Bedroom</a>
+                <a href="#" class="room-option">Living Room</a>
+                <a href="#" class="room-option">Kitchen</a>
+                <a href="#" class="room-option">Bathroom</a>
+                <a href="#" class="room-option">Other</a>
+            </div>
+        </div>
+
+        
+        <div class="surface-type">
+            <h2>Surface Type</h2>
+            <div class="surface-options">
+                <a href="#" class="surface-button active">Both</a>
+                <a href="#" class="surface-button">Wall</a>
+                <a href="#" class="surface-button">Floor</a>
+            </div>
+        </div>
+
+        
+        <div class="dimensions-section">
+            <h2>Room Dimensions</h2>
+            <div class="room-shape">
+                <label for="shape">Room Shape</label>
+                <select id="shape">
+                    <option value="rectangle">Rectangle</option>
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                </select>
+            </div>
+            
+            <div class="dimension-inputs">
+                <div class="input-group">
+                    <label for="floor-length">Floor a (Length) (ft)</label>
+                    <input type="number" id="floor-length" placeholder="Length">
+                </div>
+                <div class="input-group">
+                    <label for="floor-width">Floor b (Width) (ft)</label>
+                    <input type="number" id="floor-width" placeholder="Width">
+                </div>
+
+                <div class="input-group">
+                    <label for="wall-height">Wall 1 Height (ft)</label>
+                    <input type="number" id="wall-height" placeholder="Height">
+                </div>
+            </div>
+        </div>
+
+        <button id="calculate">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

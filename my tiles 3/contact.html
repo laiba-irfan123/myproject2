@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html">My Tyles</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="Bedroom.html">Bedroom Tiles</a></li>
+                      <li><a href="wall.html">Wall Tiles</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="floor.html">Floor Tiles</a></li>
+                      <li><a href="Bathroom.html">Bathroom Tiles</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="Kitchen.html">Kitchen Tiles</a></li>
+                      <li><a href="outdoor.html">Outdoor Tiles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+
+      <div class="contact">
+        <h2>Contact</h2>
+      </div>
+
+      <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.956193828284!2d66.9966434526181!3d24.94947055130472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36ae71fc40a31%3A0xcfbb1d61e6ab566d!2sOrangi%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1724409923976!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road,ABC Bulding</h5>
+                        <p>Orangi, Town, Karachi</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+9 12345678910</h5>
+                        <p>Monday to Saturday 10AM to 7PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>Sarimkhan@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form name="fm" onsubmit="return validateForm(event);">
+
+                  <label  for="fname" style="color: rgb(66, 65, 65);">First Name:</label>
+                  <input type="text" id="fname" name="fname">
+
+                  <label for="lname"  style="color: rgb(66, 65, 65);">Last Name:</label>
+                    <input type="text" id="lname" name="lname">
+
+                    <label for="email"  style="color: rgb(66, 65, 65);">Email:</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="comments"  style="color: rgb(66, 65, 65);">Comments:</label>
+                    <textarea id="comments" rows="8" ></textarea>
+                    
+                    <button type="submit" name="btn" class="button">
+                      <span class="text">send message</span>
+                      <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-icon="paper-plane" width="20px" aria-hidden="true"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" fill="currentColor"></path></svg></span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Mega Menu</h4>
+            <ul>
+              <li><a href="Bedroom.html">Bedroom Tiles</a></li>
+              <li><a href="floor.html">Floor Tiles</a></li>
+              <li><a href="Bathroom.html">Bathroom Tiles</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Mega Menu</h4>
+            <ul>
+              <li><a href="Kitchen.html">Kitchen Tiles</a></li>
+              <li><a href="wall.html">Wall Tiles</a></li>
+              <li><a href="outdoor.html">Outdoor Tiles</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Home</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="New folder/index.html">Calculate Tiles</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/login?lang=en"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>
